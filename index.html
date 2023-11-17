@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        .input-form {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin: 10rem auto 5rem;
+            border-radius: 100px;
+            gap: 0.1rem;
+            box-shadow: 0 0 10px 1px rgb(134, 134, 134);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .input-form:hover {
+            transform: scale(1.1);
+        }
+
+        .query,
+        .option {
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.603);
+            padding: 0.5rem 1rem;
+        }
+
+        .query {
+            border-top-left-radius: 999px;
+            border-bottom-left-radius: 999px;
+        }
+
+        .option {
+            border-top-right-radius: 999px;
+            border-bottom-right-radius: 999px;
+        }
+
+        .demo-result {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0.5rem 1rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.096);
+        }
+
+        .tag-list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        span {
+            background: rgba(0, 0, 0, 0.274);
+            padding: 0.2rem 0.5rem;
+            border-radius: 999px;
+            margin: 0.2rem;
+            color: rgba(0, 0, 0, 0.589);
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        ion-icon {
+            font-size: 1.5rem;
+            background-color: rgba(58, 56, 194, 0.747);
+            color: white;
+            padding: 0.2rem;
+            border-radius: 100px;
+            margin-right: 0.5rem;
+        }
+        .results {
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            margin: auto;
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body style="background: rgb(201, 201, 201);">
+    <form class="input-form" action="">
+        <input class="query" type="text" placeholder="Enter the search term" required>
+        <select class="option" name="option" id="option">
+            <option value="sfx">Sound Effects</option>
+            <option value="gst">Green Screen</option>
+        </select>
+    </form>
+    <div class="results">
+        <div class="demo-result">
+            <h2><ion-icon name="arrow-down-outline"></ion-icon> Swoosh sound effect</h1>
+                <p class="tag-list"><span>swoosh</span><span>transition</span><span>hd</span></p>
+        </div>
+        <div class="demo-result">
+            <h2><ion-icon name="arrow-down-outline"></ion-icon> Explosion sound effect</h1>
+                <p class="tag-list"><span>boom</span><span>explostion</span><span>hd</span></p>
+        </div>
+        <div class="demo-result">
+            <h2><ion-icon name="arrow-down-outline"></ion-icon> Pop sound effect</h1>
+                <p class="tag-list"><span>pop</span><span>alert</span><span>hd</span><span>notificationD</span></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
